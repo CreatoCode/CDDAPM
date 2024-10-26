@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE1AB9C52CBD041000CCD497 /* UIViewController+WhiteScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1AB9C42CBD041000CCD497 /* UIViewController+WhiteScreen.m */; };
+		CE1AB9C82CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1AB9C72CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.m */; };
+		CE1AB9CB2CBD118C00CCD497 /* NSURLRequest+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1AB9CA2CBD118C00CCD497 /* NSURLRequest+Addition.m */; };
+		CE1AB9CD2CBD171300CCD497 /* CDDAPMNetworkMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1AB9CC2CBD171300CCD497 /* CDDAPMNetworkMonitorTests.m */; };
+		CE1AB9D12CBD195500CCD497 /* CDDNetworkRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1AB9D02CBD195500CCD497 /* CDDNetworkRequestTest.m */; };
+		CE3712992CB94E5B00B9C3DE /* CDDAPMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3712982CB94E5B00B9C3DE /* CDDAPMTests.m */; };
+		CE3712A12CB94E8D00B9C3DE /* CDDAPMZobimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3712A02CB94E8D00B9C3DE /* CDDAPMZobimeTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4140CF2CBD500100998B6E /* NSURL+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4140CE2CBD500100998B6E /* NSURL+Addition.m */; };
+		CE4DE6602CBC1E1900441D29 /* CDDAPMRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DE65F2CBC1E1900441D29 /* CDDAPMRuntime.m */; };
+		CE5329362CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5329352CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.m */; };
+		CE5329392CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5329382CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.m */; };
+		CE57AF8B2CBC6A90006739C8 /* UIViewController+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE57AF892CBC6A90006739C8 /* UIViewController+addition.m */; };
+		CE57AF8E2CBC6B15006739C8 /* UIView+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE57AF8C2CBC6B15006739C8 /* UIView+addition.m */; };
+		CE57AF922CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE57AF912CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.m */; };
+		CE749ED42CBCC024008BF468 /* UIImage+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE749ED32CBCC024008BF468 /* UIImage+addition.m */; };
+		CE749ED72CBCC109008BF468 /* CDDAPMImageDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = CE749ED62CBCC109008BF468 /* CDDAPMImageDetection.m */; };
+		CE749ED92CBCE2BF008BF468 /* empty.html in Resources */ = {isa = PBXBuildFile; fileRef = CE749ED82CBCE2BF008BF468 /* empty.html */; };
+		CE749EDD2CBCEE78008BF468 /* CDDAPMPageTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CE749EDC2CBCEE78008BF468 /* CDDAPMPageTracker.m */; };
+		CE749EE22CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE749EE12CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.m */; };
+		CE8115FA2CB8B97700B04C76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8115F92CB8B97700B04C76 /* AppDelegate.m */; };
+		CE8115FD2CB8B97700B04C76 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8115FC2CB8B97700B04C76 /* SceneDelegate.m */; };
+		CE8116002CB8B97700B04C76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8115FF2CB8B97700B04C76 /* ViewController.m */; };
+		CE8116032CB8B97700B04C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8116012CB8B97700B04C76 /* Main.storyboard */; };
+		CE8116052CB8B97A00B04C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8116042CB8B97A00B04C76 /* Assets.xcassets */; };
+		CE8116082CB8B97A00B04C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8116062CB8B97A00B04C76 /* LaunchScreen.storyboard */; };
+		CE81160B2CB8B97A00B04C76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81160A2CB8B97A00B04C76 /* main.m */; };
+		CE8116142CB8B9DB00B04C76 /* CDDAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8116132CB8B9DB00B04C76 /* CDDAPM.m */; };
+		CE8116192CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8116182CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.m */; };
+		CE8116202CB8F54800B04C76 /* CDDAPMFreezesPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81161F2CB8F54800B04C76 /* CDDAPMFreezesPlugin.m */; };
+		CE8116242CB9032100B04C76 /* CDDAPMFrameRatePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8116232CB9032100B04C76 /* CDDAPMFrameRatePlugin.m */; };
+		CE8116282CB90AAF00B04C76 /* CDDAPMConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8116272CB90AAF00B04C76 /* CDDAPMConfig.m */; };
+		CE81162C2CB9168900B04C76 /* CDDAPMZobimePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81162B2CB9168900B04C76 /* CDDAPMZobimePlugin.m */; };
+		CE915FE22CBA6458004FC1AE /* NSObject+DDZombieDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CE915FD32CBA6458004FC1AE /* NSObject+DDZombieDetector.m */; };
+		CE915FE32CBA6458004FC1AE /* DDZombie.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE915FD42CBA6458004FC1AE /* DDZombie.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE915FE52CBA6458004FC1AE /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = CE915FD72CBA6458004FC1AE /* queue.c */; };
+		CE915FE62CBA6458004FC1AE /* DDZombieMonitor.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE915FDC2CBA6458004FC1AE /* DDZombieMonitor.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE915FEC2CBA6534004FC1AE /* DDThreadStack.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE915FEB2CBA6534004FC1AE /* DDThreadStack.mm */; };
+		CE9C6AFA2CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6AF92CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.m */; };
+		CE9C6AFD2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6AFC2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.m */; };
+		CE9C6B002CBE3AFC00110CFA /* CDDAPMFrameRateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6AFF2CBE3AFC00110CFA /* CDDAPMFrameRateModel.m */; };
+		CE9C6B032CBE5E1800110CFA /* CDDAPMFreezesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6B022CBE5E1800110CFA /* CDDAPMFreezesModel.m */; };
+		CE9C6B062CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6B052CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.m */; };
+		CE9C6B092CBE655300110CFA /* CDDAPMNetworkRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6B082CBE655300110CFA /* CDDAPMNetworkRequestModel.m */; };
+		CE9C6B0C2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6B0B2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.m */; };
+		CE9C6B102CBE703600110CFA /* CDDAPMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6B0F2CBE703600110CFA /* CDDAPMLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE37129A2CB94E5B00B9C3DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8115ED2CB8B97700B04C76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8115F42CB8B97700B04C76;
+			remoteInfo = CDDAPM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE1AB9C32CBD041000CCD497 /* UIViewController+WhiteScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WhiteScreen.h"; sourceTree = "<group>"; };
+		CE1AB9C42CBD041000CCD497 /* UIViewController+WhiteScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WhiteScreen.m"; sourceTree = "<group>"; };
+		CE1AB9C62CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+NetworkRequestMonitor.h"; sourceTree = "<group>"; };
+		CE1AB9C72CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+NetworkRequestMonitor.m"; sourceTree = "<group>"; };
+		CE1AB9C92CBD118C00CCD497 /* NSURLRequest+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Addition.h"; sourceTree = "<group>"; };
+		CE1AB9CA2CBD118C00CCD497 /* NSURLRequest+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Addition.m"; sourceTree = "<group>"; };
+		CE1AB9CC2CBD171300CCD497 /* CDDAPMNetworkMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMNetworkMonitorTests.m; sourceTree = "<group>"; };
+		CE1AB9CF2CBD195500CCD497 /* CDDNetworkRequestTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDNetworkRequestTest.h; sourceTree = "<group>"; };
+		CE1AB9D02CBD195500CCD497 /* CDDNetworkRequestTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDNetworkRequestTest.m; sourceTree = "<group>"; };
+		CE3712962CB94E5B00B9C3DE /* CDDAPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDDAPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3712982CB94E5B00B9C3DE /* CDDAPMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMTests.m; sourceTree = "<group>"; };
+		CE37129F2CB94E8D00B9C3DE /* CDDAPMZobimeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMZobimeTest.h; sourceTree = "<group>"; };
+		CE3712A02CB94E8D00B9C3DE /* CDDAPMZobimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMZobimeTest.m; sourceTree = "<group>"; };
+		CE4140CD2CBD500100998B6E /* NSURL+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Addition.h"; sourceTree = "<group>"; };
+		CE4140CE2CBD500100998B6E /* NSURL+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Addition.m"; sourceTree = "<group>"; };
+		CE4DE65E2CBC1E1900441D29 /* CDDAPMRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMRuntime.h; sourceTree = "<group>"; };
+		CE4DE65F2CBC1E1900441D29 /* CDDAPMRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMRuntime.m; sourceTree = "<group>"; };
+		CE5329342CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMWhiteScreenPlugin.h; sourceTree = "<group>"; };
+		CE5329352CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMWhiteScreenPlugin.m; sourceTree = "<group>"; };
+		CE5329372CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebview+CDDAPMWhiteScreen.h"; sourceTree = "<group>"; };
+		CE5329382CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebview+CDDAPMWhiteScreen.m"; sourceTree = "<group>"; };
+		CE57AF892CBC6A90006739C8 /* UIViewController+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+addition.m"; sourceTree = "<group>"; };
+		CE57AF8A2CBC6A90006739C8 /* UIViewController+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+addition.h"; sourceTree = "<group>"; };
+		CE57AF8C2CBC6B15006739C8 /* UIView+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addition.m"; sourceTree = "<group>"; };
+		CE57AF8D2CBC6B15006739C8 /* UIView+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addition.h"; sourceTree = "<group>"; };
+		CE57AF902CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAWhiteScreenTestWebViewController.h; sourceTree = "<group>"; };
+		CE57AF912CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAWhiteScreenTestWebViewController.m; sourceTree = "<group>"; };
+		CE749ED22CBCC024008BF468 /* UIImage+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+addition.h"; sourceTree = "<group>"; };
+		CE749ED32CBCC024008BF468 /* UIImage+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+addition.m"; sourceTree = "<group>"; };
+		CE749ED52CBCC109008BF468 /* CDDAPMImageDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMImageDetection.h; sourceTree = "<group>"; };
+		CE749ED62CBCC109008BF468 /* CDDAPMImageDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMImageDetection.m; sourceTree = "<group>"; };
+		CE749ED82CBCE2BF008BF468 /* empty.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = empty.html; sourceTree = "<group>"; };
+		CE749EDB2CBCEE78008BF468 /* CDDAPMPageTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMPageTracker.h; sourceTree = "<group>"; };
+		CE749EDC2CBCEE78008BF468 /* CDDAPMPageTracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMPageTracker.m; sourceTree = "<group>"; };
+		CE749EE02CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMNetworkRequestPlugin.h; sourceTree = "<group>"; };
+		CE749EE12CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMNetworkRequestPlugin.m; sourceTree = "<group>"; };
+		CE8115F52CB8B97700B04C76 /* CDDAPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDAPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8115F82CB8B97700B04C76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE8115F92CB8B97700B04C76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE8115FB2CB8B97700B04C76 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CE8115FC2CB8B97700B04C76 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CE8115FE2CB8B97700B04C76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE8115FF2CB8B97700B04C76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE8116022CB8B97700B04C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE8116042CB8B97A00B04C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8116072CB8B97A00B04C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE8116092CB8B97A00B04C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE81160A2CB8B97A00B04C76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE8116122CB8B9DB00B04C76 /* CDDAPM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPM.h; sourceTree = "<group>"; };
+		CE8116132CB8B9DB00B04C76 /* CDDAPM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPM.m; sourceTree = "<group>"; };
+		CE8116152CB8BDD500B04C76 /* CDDAPMTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMTypes.h; sourceTree = "<group>"; };
+		CE8116172CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMAppLaunchTimePlugin.h; sourceTree = "<group>"; };
+		CE8116182CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMAppLaunchTimePlugin.m; sourceTree = "<group>"; };
+		CE81161C2CB8CD1D00B04C76 /* CDDAPMCoreTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMCoreTypes.h; sourceTree = "<group>"; };
+		CE81161E2CB8F54800B04C76 /* CDDAPMFreezesPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMFreezesPlugin.h; sourceTree = "<group>"; };
+		CE81161F2CB8F54800B04C76 /* CDDAPMFreezesPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMFreezesPlugin.m; sourceTree = "<group>"; };
+		CE8116222CB9032100B04C76 /* CDDAPMFrameRatePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMFrameRatePlugin.h; sourceTree = "<group>"; };
+		CE8116232CB9032100B04C76 /* CDDAPMFrameRatePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMFrameRatePlugin.m; sourceTree = "<group>"; };
+		CE8116262CB90AAF00B04C76 /* CDDAPMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMConfig.h; sourceTree = "<group>"; };
+		CE8116272CB90AAF00B04C76 /* CDDAPMConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMConfig.m; sourceTree = "<group>"; };
+		CE81162A2CB9168900B04C76 /* CDDAPMZobimePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMZobimePlugin.h; sourceTree = "<group>"; };
+		CE81162B2CB9168900B04C76 /* CDDAPMZobimePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMZobimePlugin.m; sourceTree = "<group>"; };
+		CE915FD32CBA6458004FC1AE /* NSObject+DDZombieDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDZombieDetector.m"; sourceTree = "<group>"; };
+		CE915FD42CBA6458004FC1AE /* DDZombie.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDZombie.mm; sourceTree = "<group>"; };
+		CE915FD62CBA6458004FC1AE /* DDZombieMonitor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZombieMonitor+Private.h"; sourceTree = "<group>"; };
+		CE915FD72CBA6458004FC1AE /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		CE915FD82CBA6458004FC1AE /* DDZombieMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZombieMonitor.h; sourceTree = "<group>"; };
+		CE915FD92CBA6458004FC1AE /* NSObject+DDZombieDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DDZombieDetector.h"; sourceTree = "<group>"; };
+		CE915FDA2CBA6458004FC1AE /* DDZombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZombie.h; sourceTree = "<group>"; };
+		CE915FDC2CBA6458004FC1AE /* DDZombieMonitor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDZombieMonitor.mm; sourceTree = "<group>"; };
+		CE915FE12CBA6458004FC1AE /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		CE915FEA2CBA6534004FC1AE /* DDThreadStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDThreadStack.h; sourceTree = "<group>"; };
+		CE915FEB2CBA6534004FC1AE /* DDThreadStack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDThreadStack.mm; sourceTree = "<group>"; };
+		CE9C6AF82CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMMemoryWarningPlugin.h; sourceTree = "<group>"; };
+		CE9C6AF92CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMMemoryWarningPlugin.m; sourceTree = "<group>"; };
+		CE9C6AFB2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMMemoryWarningModel.h; sourceTree = "<group>"; };
+		CE9C6AFC2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMMemoryWarningModel.m; sourceTree = "<group>"; };
+		CE9C6AFE2CBE3AFC00110CFA /* CDDAPMFrameRateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMFrameRateModel.h; sourceTree = "<group>"; };
+		CE9C6AFF2CBE3AFC00110CFA /* CDDAPMFrameRateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMFrameRateModel.m; sourceTree = "<group>"; };
+		CE9C6B012CBE5E1800110CFA /* CDDAPMFreezesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMFreezesModel.h; sourceTree = "<group>"; };
+		CE9C6B022CBE5E1800110CFA /* CDDAPMFreezesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMFreezesModel.m; sourceTree = "<group>"; };
+		CE9C6B042CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMAppLaunchTimeModel.h; sourceTree = "<group>"; };
+		CE9C6B052CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMAppLaunchTimeModel.m; sourceTree = "<group>"; };
+		CE9C6B072CBE655300110CFA /* CDDAPMNetworkRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMNetworkRequestModel.h; sourceTree = "<group>"; };
+		CE9C6B082CBE655300110CFA /* CDDAPMNetworkRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMNetworkRequestModel.m; sourceTree = "<group>"; };
+		CE9C6B0A2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMWhiteScreenModel.h; sourceTree = "<group>"; };
+		CE9C6B0B2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMWhiteScreenModel.m; sourceTree = "<group>"; };
+		CE9C6B0E2CBE703600110CFA /* CDDAPMLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAPMLogger.h; sourceTree = "<group>"; };
+		CE9C6B0F2CBE703600110CFA /* CDDAPMLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDAPMLogger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3712932CB94E5B00B9C3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8115F22CB8B97700B04C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE1AB9C12CBD03EF00CCD497 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				CE5329372CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.h */,
+				CE5329382CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.m */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
+		CE1AB9C22CBD03FF00CCD497 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AB9C32CBD041000CCD497 /* UIViewController+WhiteScreen.h */,
+				CE1AB9C42CBD041000CCD497 /* UIViewController+WhiteScreen.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1AB9CE2CBD193300CCD497 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AB9CF2CBD195500CCD497 /* CDDNetworkRequestTest.h */,
+				CE1AB9D02CBD195500CCD497 /* CDDNetworkRequestTest.m */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		CE3712972CB94E5B00B9C3DE /* CDDAPMTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE3712982CB94E5B00B9C3DE /* CDDAPMTests.m */,
+				CE1AB9CC2CBD171300CCD497 /* CDDAPMNetworkMonitorTests.m */,
+			);
+			path = CDDAPMTests;
+			sourceTree = "<group>";
+		};
+		CE4DE65A2CBC1DDE00441D29 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DE65E2CBC1E1900441D29 /* CDDAPMRuntime.h */,
+				CE4DE65F2CBC1E1900441D29 /* CDDAPMRuntime.m */,
+				CE1AB9C92CBD118C00CCD497 /* NSURLRequest+Addition.h */,
+				CE1AB9CA2CBD118C00CCD497 /* NSURLRequest+Addition.m */,
+				CE4140CD2CBD500100998B6E /* NSURL+Addition.h */,
+				CE4140CE2CBD500100998B6E /* NSURL+Addition.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		CE5329332CBBA98B00D97EE6 /* WhiteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AB9C22CBD03FF00CCD497 /* View */,
+				CE1AB9C12CBD03EF00CCD497 /* Webview */,
+				CE5329342CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.h */,
+				CE5329352CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.m */,
+				CE749ED52CBCC109008BF468 /* CDDAPMImageDetection.h */,
+				CE749ED62CBCC109008BF468 /* CDDAPMImageDetection.m */,
+				CE9C6B0A2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.h */,
+				CE9C6B0B2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.m */,
+			);
+			path = WhiteScreen;
+			sourceTree = "<group>";
+		};
+		CE57AF882CBC6A32006739C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE57AF8A2CBC6A90006739C8 /* UIViewController+addition.h */,
+				CE57AF892CBC6A90006739C8 /* UIViewController+addition.m */,
+				CE749ED22CBCC024008BF468 /* UIImage+addition.h */,
+				CE749ED32CBCC024008BF468 /* UIImage+addition.m */,
+				CE57AF8D2CBC6B15006739C8 /* UIView+addition.h */,
+				CE57AF8C2CBC6B15006739C8 /* UIView+addition.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE57AF8F2CBC733C006739C8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AB9CE2CBD193300CCD497 /* NetworkRequest */,
+				CE749ED12CBCB567008BF468 /* Zobime */,
+				CE749ED02CBCB554008BF468 /* WhiteScreen */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CE749ED02CBCB554008BF468 /* WhiteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE57AF902CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.h */,
+				CE57AF912CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.m */,
+				CE749ED82CBCE2BF008BF468 /* empty.html */,
+			);
+			path = WhiteScreen;
+			sourceTree = "<group>";
+		};
+		CE749ED12CBCB567008BF468 /* Zobime */ = {
+			isa = PBXGroup;
+			children = (
+				CE37129F2CB94E8D00B9C3DE /* CDDAPMZobimeTest.h */,
+				CE3712A02CB94E8D00B9C3DE /* CDDAPMZobimeTest.m */,
+			);
+			path = Zobime;
+			sourceTree = "<group>";
+		};
+		CE749EDA2CBCEE5C008BF468 /* PageTrack */ = {
+			isa = PBXGroup;
+			children = (
+				CE749EDB2CBCEE78008BF468 /* CDDAPMPageTracker.h */,
+				CE749EDC2CBCEE78008BF468 /* CDDAPMPageTracker.m */,
+			);
+			path = PageTrack;
+			sourceTree = "<group>";
+		};
+		CE749EDE2CBCFCE8008BF468 /* Profiling */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C6AF72CBDF34100110CFA /* MemoryWarning */,
+				CE749EDF2CBCFEF0008BF468 /* NetworkRequest */,
+				CE5329332CBBA98B00D97EE6 /* WhiteScreen */,
+				CE8116292CB9167900B04C76 /* Zobime */,
+				CE8116212CB9031200B04C76 /* FrameRate */,
+				CE81161D2CB8F53600B04C76 /* Freezes */,
+				CE81161A2CB8CCD500B04C76 /* LaunchTime */,
+			);
+			path = Profiling;
+			sourceTree = "<group>";
+		};
+		CE749EDF2CBCFEF0008BF468 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CE749EE02CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.h */,
+				CE749EE12CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.m */,
+				CE1AB9C62CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.h */,
+				CE1AB9C72CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.m */,
+				CE9C6B072CBE655300110CFA /* CDDAPMNetworkRequestModel.h */,
+				CE9C6B082CBE655300110CFA /* CDDAPMNetworkRequestModel.m */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		CE8115EC2CB8B97700B04C76 = {
+			isa = PBXGroup;
+			children = (
+				CE8115F72CB8B97700B04C76 /* CDDAPM */,
+				CE3712972CB94E5B00B9C3DE /* CDDAPMTests */,
+				CE8115F62CB8B97700B04C76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8115F62CB8B97700B04C76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8115F52CB8B97700B04C76 /* CDDAPM.app */,
+				CE3712962CB94E5B00B9C3DE /* CDDAPMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8115F72CB8B97700B04C76 /* CDDAPM */ = {
+			isa = PBXGroup;
+			children = (
+				CE57AF8F2CBC733C006739C8 /* Tests */,
+				CE8116112CB8B9B200B04C76 /* Source */,
+				CE8115F82CB8B97700B04C76 /* AppDelegate.h */,
+				CE8115F92CB8B97700B04C76 /* AppDelegate.m */,
+				CE8115FB2CB8B97700B04C76 /* SceneDelegate.h */,
+				CE8115FC2CB8B97700B04C76 /* SceneDelegate.m */,
+				CE8115FE2CB8B97700B04C76 /* ViewController.h */,
+				CE8115FF2CB8B97700B04C76 /* ViewController.m */,
+				CE8116012CB8B97700B04C76 /* Main.storyboard */,
+				CE8116042CB8B97A00B04C76 /* Assets.xcassets */,
+				CE8116062CB8B97A00B04C76 /* LaunchScreen.storyboard */,
+				CE8116092CB8B97A00B04C76 /* Info.plist */,
+				CE81160A2CB8B97A00B04C76 /* main.m */,
+			);
+			path = CDDAPM;
+			sourceTree = "<group>";
+		};
+		CE8116112CB8B9B200B04C76 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CE8116152CB8BDD500B04C76 /* CDDAPMTypes.h */,
+				CE8116122CB8B9DB00B04C76 /* CDDAPM.h */,
+				CE8116132CB8B9DB00B04C76 /* CDDAPM.m */,
+				CE8116252CB90A8A00B04C76 /* Config */,
+				CE8116162CB8CCB600B04C76 /* Core */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE8116162CB8CCB600B04C76 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C6B0D2CBE701900110CFA /* Logger */,
+				CE749EDE2CBCFCE8008BF468 /* Profiling */,
+				CE749EDA2CBCEE5C008BF468 /* PageTrack */,
+				CE57AF882CBC6A32006739C8 /* UI */,
+				CE4DE65A2CBC1DDE00441D29 /* Foundation */,
+				CE81161B2CB8CCF900B04C76 /* Types */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE81161A2CB8CCD500B04C76 /* LaunchTime */ = {
+			isa = PBXGroup;
+			children = (
+				CE8116172CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.h */,
+				CE8116182CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.m */,
+				CE9C6B042CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.h */,
+				CE9C6B052CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.m */,
+			);
+			path = LaunchTime;
+			sourceTree = "<group>";
+		};
+		CE81161B2CB8CCF900B04C76 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CE81161C2CB8CD1D00B04C76 /* CDDAPMCoreTypes.h */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		CE81161D2CB8F53600B04C76 /* Freezes */ = {
+			isa = PBXGroup;
+			children = (
+				CE81161E2CB8F54800B04C76 /* CDDAPMFreezesPlugin.h */,
+				CE81161F2CB8F54800B04C76 /* CDDAPMFreezesPlugin.m */,
+				CE9C6B012CBE5E1800110CFA /* CDDAPMFreezesModel.h */,
+				CE9C6B022CBE5E1800110CFA /* CDDAPMFreezesModel.m */,
+			);
+			path = Freezes;
+			sourceTree = "<group>";
+		};
+		CE8116212CB9031200B04C76 /* FrameRate */ = {
+			isa = PBXGroup;
+			children = (
+				CE8116222CB9032100B04C76 /* CDDAPMFrameRatePlugin.h */,
+				CE8116232CB9032100B04C76 /* CDDAPMFrameRatePlugin.m */,
+				CE9C6AFE2CBE3AFC00110CFA /* CDDAPMFrameRateModel.h */,
+				CE9C6AFF2CBE3AFC00110CFA /* CDDAPMFrameRateModel.m */,
+			);
+			path = FrameRate;
+			sourceTree = "<group>";
+		};
+		CE8116252CB90A8A00B04C76 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CE8116262CB90AAF00B04C76 /* CDDAPMConfig.h */,
+				CE8116272CB90AAF00B04C76 /* CDDAPMConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CE8116292CB9167900B04C76 /* Zobime */ = {
+			isa = PBXGroup;
+			children = (
+				CE915FD22CBA6458004FC1AE /* DDZombieMonitor */,
+				CE81162A2CB9168900B04C76 /* CDDAPMZobimePlugin.h */,
+				CE81162B2CB9168900B04C76 /* CDDAPMZobimePlugin.m */,
+			);
+			path = Zobime;
+			sourceTree = "<group>";
+		};
+		CE915FD22CBA6458004FC1AE /* DDZombieMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				CE915FEA2CBA6534004FC1AE /* DDThreadStack.h */,
+				CE915FEB2CBA6534004FC1AE /* DDThreadStack.mm */,
+				CE915FDA2CBA6458004FC1AE /* DDZombie.h */,
+				CE915FD42CBA6458004FC1AE /* DDZombie.mm */,
+				CE915FD82CBA6458004FC1AE /* DDZombieMonitor.h */,
+				CE915FDC2CBA6458004FC1AE /* DDZombieMonitor.mm */,
+				CE915FD62CBA6458004FC1AE /* DDZombieMonitor+Private.h */,
+				CE915FD92CBA6458004FC1AE /* NSObject+DDZombieDetector.h */,
+				CE915FD32CBA6458004FC1AE /* NSObject+DDZombieDetector.m */,
+				CE915FD72CBA6458004FC1AE /* queue.c */,
+				CE915FE12CBA6458004FC1AE /* queue.h */,
+			);
+			path = DDZombieMonitor;
+			sourceTree = "<group>";
+		};
+		CE9C6AF72CBDF34100110CFA /* MemoryWarning */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C6AF82CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.h */,
+				CE9C6AF92CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.m */,
+				CE9C6AFB2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.h */,
+				CE9C6AFC2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.m */,
+			);
+			path = MemoryWarning;
+			sourceTree = "<group>";
+		};
+		CE9C6B0D2CBE701900110CFA /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C6B0E2CBE703600110CFA /* CDDAPMLogger.h */,
+				CE9C6B0F2CBE703600110CFA /* CDDAPMLogger.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3712952CB94E5B00B9C3DE /* CDDAPMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE37129E2CB94E5B00B9C3DE /* Build configuration list for PBXNativeTarget "CDDAPMTests" */;
+			buildPhases = (
+				CE3712922CB94E5B00B9C3DE /* Sources */,
+				CE3712932CB94E5B00B9C3DE /* Frameworks */,
+				CE3712942CB94E5B00B9C3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE37129B2CB94E5B00B9C3DE /* PBXTargetDependency */,
+			);
+			name = CDDAPMTests;
+			productName = CDDAPMTests;
+			productReference = CE3712962CB94E5B00B9C3DE /* CDDAPMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE8115F42CB8B97700B04C76 /* CDDAPM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE81160E2CB8B97A00B04C76 /* Build configuration list for PBXNativeTarget "CDDAPM" */;
+			buildPhases = (
+				CE8115F12CB8B97700B04C76 /* Sources */,
+				CE8115F22CB8B97700B04C76 /* Frameworks */,
+				CE8115F32CB8B97700B04C76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDDAPM;
+			productName = CDDAPM;
+			productReference = CE8115F52CB8B97700B04C76 /* CDDAPM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE8115ED2CB8B97700B04C76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CE3712952CB94E5B00B9C3DE = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CE8115F42CB8B97700B04C76;
+					};
+					CE8115F42CB8B97700B04C76 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = CE8115F02CB8B97700B04C76 /* Build configuration list for PBXProject "CDDAPM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE8115EC2CB8B97700B04C76;
+			productRefGroup = CE8115F62CB8B97700B04C76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8115F42CB8B97700B04C76 /* CDDAPM */,
+				CE3712952CB94E5B00B9C3DE /* CDDAPMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3712942CB94E5B00B9C3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8115F32CB8B97700B04C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE749ED92CBCE2BF008BF468 /* empty.html in Resources */,
+				CE8116082CB8B97A00B04C76 /* LaunchScreen.storyboard in Resources */,
+				CE8116052CB8B97A00B04C76 /* Assets.xcassets in Resources */,
+				CE8116032CB8B97700B04C76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3712922CB94E5B00B9C3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1AB9CD2CBD171300CCD497 /* CDDAPMNetworkMonitorTests.m in Sources */,
+				CE3712992CB94E5B00B9C3DE /* CDDAPMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8115F12CB8B97700B04C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9C6B0C2CBE6AC200110CFA /* CDDAPMWhiteScreenModel.m in Sources */,
+				CE915FE62CBA6458004FC1AE /* DDZombieMonitor.mm in Sources */,
+				CE4140CF2CBD500100998B6E /* NSURL+Addition.m in Sources */,
+				CE749ED42CBCC024008BF468 /* UIImage+addition.m in Sources */,
+				CE915FEC2CBA6534004FC1AE /* DDThreadStack.mm in Sources */,
+				CE9C6B002CBE3AFC00110CFA /* CDDAPMFrameRateModel.m in Sources */,
+				CE8116192CB8CCCB00B04C76 /* CDDAPMAppLaunchTimePlugin.m in Sources */,
+				CE9C6AFD2CBDFB5200110CFA /* CDDAPMMemoryWarningModel.m in Sources */,
+				CE8116002CB8B97700B04C76 /* ViewController.m in Sources */,
+				CE8115FA2CB8B97700B04C76 /* AppDelegate.m in Sources */,
+				CE915FE32CBA6458004FC1AE /* DDZombie.mm in Sources */,
+				CE3712A12CB94E8D00B9C3DE /* CDDAPMZobimeTest.m in Sources */,
+				CE1AB9C82CBD0D9400CCD497 /* NSURLSession+NetworkRequestMonitor.m in Sources */,
+				CE5329362CBBB8CB00D97EE6 /* CDDAPMWhiteScreenPlugin.m in Sources */,
+				CE8116202CB8F54800B04C76 /* CDDAPMFreezesPlugin.m in Sources */,
+				CE81162C2CB9168900B04C76 /* CDDAPMZobimePlugin.m in Sources */,
+				CE8116242CB9032100B04C76 /* CDDAPMFrameRatePlugin.m in Sources */,
+				CE749EDD2CBCEE78008BF468 /* CDDAPMPageTracker.m in Sources */,
+				CE9C6B032CBE5E1800110CFA /* CDDAPMFreezesModel.m in Sources */,
+				CE5329392CBBBDAE00D97EE6 /* WKWebview+CDDAPMWhiteScreen.m in Sources */,
+				CE1AB9C52CBD041000CCD497 /* UIViewController+WhiteScreen.m in Sources */,
+				CE1AB9D12CBD195500CCD497 /* CDDNetworkRequestTest.m in Sources */,
+				CE1AB9CB2CBD118C00CCD497 /* NSURLRequest+Addition.m in Sources */,
+				CE57AF8B2CBC6A90006739C8 /* UIViewController+addition.m in Sources */,
+				CE8116142CB8B9DB00B04C76 /* CDDAPM.m in Sources */,
+				CE9C6B102CBE703600110CFA /* CDDAPMLogger.m in Sources */,
+				CE8116282CB90AAF00B04C76 /* CDDAPMConfig.m in Sources */,
+				CE4DE6602CBC1E1900441D29 /* CDDAPMRuntime.m in Sources */,
+				CE9C6B092CBE655300110CFA /* CDDAPMNetworkRequestModel.m in Sources */,
+				CE9C6B062CBE62B000110CFA /* CDDAPMAppLaunchTimeModel.m in Sources */,
+				CE749EE22CBCFF01008BF468 /* CDDAPMNetworkRequestPlugin.m in Sources */,
+				CE915FE22CBA6458004FC1AE /* NSObject+DDZombieDetector.m in Sources */,
+				CE915FE52CBA6458004FC1AE /* queue.c in Sources */,
+				CE81160B2CB8B97A00B04C76 /* main.m in Sources */,
+				CE749ED72CBCC109008BF468 /* CDDAPMImageDetection.m in Sources */,
+				CE57AF922CBC735D006739C8 /* CDDAWhiteScreenTestWebViewController.m in Sources */,
+				CE9C6AFA2CBDF39500110CFA /* CDDAPMMemoryWarningPlugin.m in Sources */,
+				CE57AF8E2CBC6B15006739C8 /* UIView+addition.m in Sources */,
+				CE8115FD2CB8B97700B04C76 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE37129B2CB94E5B00B9C3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8115F42CB8B97700B04C76 /* CDDAPM */;
+			targetProxy = CE37129A2CB94E5B00B9C3DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE8116012CB8B97700B04C76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8116022CB8B97700B04C76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE8116062CB8B97A00B04C76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8116072CB8B97A00B04C76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE37129C2CB94E5B00B9C3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GLXRE9VJP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linjinxing.demo.CDDAPMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDDAPM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CDDAPM";
+			};
+			name = Debug;
+		};
+		CE37129D2CB94E5B00B9C3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GLXRE9VJP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linjinxing.demo.CDDAPMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDDAPM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CDDAPM";
+			};
+			name = Release;
+		};
+		CE81160C2CB8B97A00B04C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE81160D2CB8B97A00B04C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE81160F2CB8B97A00B04C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GLXRE9VJP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CDDAPM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linjinxing.demo.CDDAPM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8116102CB8B97A00B04C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GLXRE9VJP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CDDAPM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linjinxing.demo.CDDAPM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE37129E2CB94E5B00B9C3DE /* Build configuration list for PBXNativeTarget "CDDAPMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE37129C2CB94E5B00B9C3DE /* Debug */,
+				CE37129D2CB94E5B00B9C3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8115F02CB8B97700B04C76 /* Build configuration list for PBXProject "CDDAPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE81160C2CB8B97A00B04C76 /* Debug */,
+				CE81160D2CB8B97A00B04C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE81160E2CB8B97A00B04C76 /* Build configuration list for PBXNativeTarget "CDDAPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE81160F2CB8B97A00B04C76 /* Debug */,
+				CE8116102CB8B97A00B04C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE8115ED2CB8B97700B04C76 /* Project object */;
+}
