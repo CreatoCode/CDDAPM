@@ -1,9 +1,4 @@
-当然可以！以下是一个详细的 README 文件，涵盖了你提到的所有功能：
-
-### README
-
-#### iOS Performance Monitoring
-
+#### CDDAPM
 This repository contains an iOS application that monitors various performance metrics to ensure a smooth user experience. 
 
 ### Features
@@ -18,16 +13,18 @@ This repository contains an iOS application that monitors various performance me
 ### Installation
 
 1. **Clone the Repository**
-   ```sh
+
+```sh
    git clone https://github.com/CreatoCode/CDDAPM.git
    cd CDDAPM
-   ```
+```
 
 ### Usage
 
 1. **Enable Monitoring**
    - In your app delegate or main view controller, initialize the monitoring system:
-     ```objective-c
+
+```objective-c
 int main(int argc, char * argv[]) {
     [[CDDAPM sharedInstance] appDidLaunch];
     [[CDDAPM sharedInstance] startPlugins:CDDAPMProfilingAll];
@@ -38,7 +35,7 @@ int main(int argc, char * argv[]) {
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
-     ```
+```
 
 ### Contributing
 
