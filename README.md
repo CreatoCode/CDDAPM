@@ -45,4 +45,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+### Contact
+
+If you have any questions or further development requirements, please contact mail:flashgeek@qq.com or WeChat: CoderDreamTech
