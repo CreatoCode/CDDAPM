@@ -7,7 +7,7 @@
 
 #import <Vision/Vision.h>
 #import <CoreImage/CoreImage.h>
-
+#import "CDDAPMLogger.h"
 #import "UIImage+addition.h"
 #import "CDDAPMImageDetection.h"
 
@@ -41,10 +41,10 @@ static dispatch_queue_t getQueue(void)
                 
                 // 如果没有检测到文本矩形，可能是白屏
                 if (results.count == 0) {
-                    NSLog(@"可能检测到白屏");
+                    CDDAPMLogDebug(@"可能检测到白屏");
                     // 在这里添加白屏处理逻辑
                 } else {
-                    NSLog(@"页面正常，检测到 %lu 个文本区域", (unsigned long)results.count);
+                    CDDAPMLogDebug(@"页面正常，检测到 %lu 个文本区域", (unsigned long)results.count);
                 }
                 if (completion) {
                     completion(results.count == 0, nil);
@@ -59,7 +59,7 @@ static dispatch_queue_t getQueue(void)
             [handler performRequests:@[textRequest] error:&requestError];
             
             if (requestError) {
-                NSLog(@"执行VNDetectTextRectanglesRequest时发生错误: %@", requestError);
+                CDDAPMLogDebug(@"执行VNDetectTextRectanglesRequest时发生错误: %@", requestError);
             }
         }
     });

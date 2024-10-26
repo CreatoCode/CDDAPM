@@ -27,9 +27,9 @@
 //    if (imageData) {
 //        // 将数据写入文件
 //        [imageData writeToFile:filePath atomically:YES];
-//        NSLog(@"图片已保存到路径: %@", filePath);
+//        CDDAPMLogDebug(@"图片已保存到路径: %@", filePath);
 //    } else {
-//        NSLog(@"图片转换为 NSData 失败");
+//        CDDAPMLogDebug(@"图片转换为 NSData 失败");
 //    }
 //}
 //
@@ -37,7 +37,7 @@
 //    // 获取缓存目录路径
 //    NSString *cacheDirectory = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
 //    NSString *filePath = [cacheDirectory stringByAppendingPathComponent:fileName];
-//    NSLog(@"filePath:%@", filePath);
+//    CDDAPMLogDebug(@"filePath:%@", filePath);
 //    // 调用 saveToCacheWithPath: 方法
 //    [self cddSaveToCacheWithPath:filePath];
 //}
@@ -68,7 +68,7 @@
 //    CGColorSpaceRelease(colorSpace);
 //    
 //    if (grayContext == NULL) {
-//        NSLog(@"创建灰度上下文失败");
+//        CDDAPMLogDebug(@"创建灰度上下文失败");
 //        return nil;
 //    }
 //    

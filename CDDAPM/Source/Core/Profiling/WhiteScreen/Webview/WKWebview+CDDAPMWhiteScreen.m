@@ -41,7 +41,7 @@
 // 交换后的具体方法实现
 - (void)cddWebView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
 {
-    NSLog(@"replaced_webView-shouldStartLoadWithRequest, webView:%@", webView);
+    CDDAPMLogDebug(@"replaced_webView-shouldStartLoadWithRequest, webView:%@", webView);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         CGFloat statusBarAndnavigationHeight = webView.navigationBarAndStatusBarTotalHeight; //状态栏高度
         WKSnapshotConfiguration *shotConfiguration = [[WKSnapshotConfiguration alloc] init];
@@ -49,7 +49,7 @@
         NSString *url = webView.URL.absoluteString;
         [webView takeSnapshotWithConfiguration:shotConfiguration completionHandler:^(UIImage * _Nullable snapshotImage, NSError * _Nullable error) {
             if (error) {
-                NSLog(@"截图失败: %@", error);
+                CDDAPMLogDebug(@"截图失败: %@", error);
             } else {
                 [CDDAPMImageDetection haveWhiteScreen:snapshotImage completion:^(BOOL isWhiteScreen, NSError* error) {
                     if (!error && isWhiteScreen) {

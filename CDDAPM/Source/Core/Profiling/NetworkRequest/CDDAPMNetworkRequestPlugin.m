@@ -64,7 +64,7 @@ CDDConstString CDDAPMNetworkRequestPluginTag = @"NetworkRequest";
         NSNumber *startTime = self.requestStartTimes[requestID];
         if (startTime) {
             NSTimeInterval duration = CACurrentMediaTime() - [startTime doubleValue];
-            NSLog(@"url:%@, duration: %f", urlString, duration);
+            CDDAPMLogDebug(@"url:%@, duration: %f", urlString, duration);
             // if (!self.requestDurations[urlString]) {
             //     self.requestDurations[urlString] = [NSMutableArray array];
             // }

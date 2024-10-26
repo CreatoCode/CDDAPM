@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"sizeof NSUInterger:%lu", sizeof(NSUInteger));
+    CDDAPMLogDebug(@"sizeof NSUInterger:%lu", sizeof(NSUInteger));
     [CDDNetworkRequestTest run];
 //    CDDAPMZobime* zombime = [[CDDAPMZobime alloc] init];
 //    [zombime start];

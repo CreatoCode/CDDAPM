@@ -27,7 +27,11 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+#ifdef DEBUG
+        _currentLogLevel = CDDAPMLogLevelDebug; // 默认日志级别
+#else
         _currentLogLevel = CDDAPMLogLevelInfo; // 默认日志级别
+#endif
     }
     return self;
 }
@@ -36,7 +40,7 @@
     self.currentLogLevel = level;
 }
 
-- (void)logWithLevel:(CDDAPMLogLevel)level file:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format arguments:(va_list)args {
+- (void)logWithLevel:(CDDAPMLogLevel)level file:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format arguments:(va_list)args {
     if (level < self.currentLogLevel) {
         return;
     }
@@ -60,34 +64,34 @@
     }
     
     NSString *fileName = [[NSString stringWithUTF8String:file] lastPathComponent];
-    NSLog(@"[CDDAPM] [%@] %@:%d %s | %@", levelString, fileName, line, function, message);
+    CDDAPMLogDebug(@"[CDDAPM] [%@] %@:%d %s | %@", levelString, fileName, line, function, message);
 }
 
-- (void)debug:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ... {
+- (void)debug:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ... {
     va_list args;
     va_start(args, format);
-    [self logWithLevel:CDDAPMLogLevelDebug file:file function:function line:line format:format arguments:args];
+    [self logWithLevel:CDDAPMLogLevelDebug file:file function:function line:line fmt:format arguments:args];
     va_end(args);
 }
 
-- (void)info:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ... {
+- (void)info:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ... {
     va_list args;
     va_start(args, format);
-    [self logWithLevel:CDDAPMLogLevelInfo file:file function:function line:line format:format arguments:args];
+    [self logWithLevel:CDDAPMLogLevelInfo file:file function:function line:line fmt:format arguments:args];
     va_end(args);
 }
 
-- (void)warning:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ... {
+- (void)warning:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ... {
     va_list args;
     va_start(args, format);
-    [self logWithLevel:CDDAPMLogLevelWarning file:file function:function line:line format:format arguments:args];
+    [self logWithLevel:CDDAPMLogLevelWarning file:file function:function line:line fmt:format arguments:args];
     va_end(args);
 }
 
-- (void)error:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ... {
+- (void)error:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ... {
     va_list args;
     va_start(args, format);
-    [self logWithLevel:CDDAPMLogLevelError file:file function:function line:line format:format arguments:args];
+    [self logWithLevel:CDDAPMLogLevelError file:file function:function line:line fmt:format arguments:args];
     va_end(args);
 }
 

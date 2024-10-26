@@ -5,6 +5,7 @@
 //  Created by flashgeek on 2024/10/14.
 //
 
+#import "CDDAPMLogger.h"
 #import "CDDAWhiteScreenTestWebViewController.h"
 
 @interface CDDAWhiteScreenTestWebViewController ()<WKNavigationDelegate>
@@ -25,7 +26,7 @@
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
 {
-    NSLog(@"webView didFinishNavigation");
+    CDDAPMLogDebug(@"webView didFinishNavigation");
 }
 
 @end

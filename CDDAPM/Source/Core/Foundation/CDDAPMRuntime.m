@@ -6,6 +6,7 @@
 //
 
 #import <objc/runtime.h>
+#import "CDDAPMLogger.h"
 #import "CDDAPMRuntime.h"
 
 
@@ -16,7 +17,7 @@ void cddapm_exchangeMethod(Class originalClass, SEL originalSel, Class replacedC
     IMP replacedMethodIMP = method_getImplementation(replacedMethod);
     BOOL didAddMethod = class_addMethod(originalClass, replacedSel, replacedMethodIMP, "v@:@@");
     if (didAddMethod) {
-        NSLog(@"class_addMethod success: %@", NSStringFromSelector(replacedSel));
+        CDDAPMLogDebug(@"class_addMethod success: %@", NSStringFromSelector(replacedSel));
     }
     Method newMethod = class_getInstanceMethod(originalClass, replacedSel);
     method_exchangeImplementations(originalMethod, newMethod);

@@ -18,7 +18,7 @@ class DDThreadStack;
 #ifdef TrackThreadStack
 @property (nonatomic, assign)DDThreadStack *threadStack;
 #else
-@property (nonatomic, assign, readonly)DDThreadStack *threadStack;
+@property (nonatomic, assign, readonly) DDThreadStack *threadStack;
 #endif
 
 + (Class)zombieIsa;

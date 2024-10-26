@@ -21,21 +21,21 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedInstance;
 
 - (void)setLogLevel:(CDDAPMLogLevel)level;
-- (void)logWithLevel:(CDDAPMLogLevel)level file:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format arguments:(va_list)args;
+- (void)logWithLevel:(CDDAPMLogLevel)level file:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format arguments:(va_list)args;
 
 // 便捷方法
-- (void)debug:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ...;
-- (void)info:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ...;
-- (void)warning:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ...;
-- (void)error:(const char *)file function:(const char *)function line:(int)line format:(NSString *)format, ...;
+- (void)debug:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ...;
+- (void)info:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ...;
+- (void)warning:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ...;
+- (void)error:(const char *)file function:(const char *)function line:(int)line fmt:(NSString *)format, ...;
 
 @end
 
 #ifdef DEBUG
-#define CDDAPMLogDebug(format, ...) [[CDDAPMLogger sharedInstance] debug:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:format, ##__VA_ARGS__]
-#define CDDAPMLogInfo(format, ...) [[CDDAPMLogger sharedInstance] info:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:format, ##__VA_ARGS__]
-#define CDDAPMLogWarning(format, ...) [[CDDAPMLogger sharedInstance] warning:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:format, ##__VA_ARGS__]
-#define CDDAPMLogError(format, ...) [[CDDAPMLogger sharedInstance] error:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:format, ##__VA_ARGS__]
+#define CDDAPMLogDebug(format, ...) [[CDDAPMLogger sharedInstance] debug:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ fmt:format, ##__VA_ARGS__]
+#define CDDAPMLogInfo(format, ...) [[CDDAPMLogger sharedInstance] info:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ fmt:format, ##__VA_ARGS__]
+#define CDDAPMLogWarning(format, ...) [[CDDAPMLogger sharedInstance] warning:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ fmt:format, ##__VA_ARGS__]
+#define CDDAPMLogError(format, ...) [[CDDAPMLogger sharedInstance] error:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ fmt:format, ##__VA_ARGS__]
 #else
 // In non-DEBUG mode, these macros do nothing
 #define CDDAPMLogDebug(format, ...)

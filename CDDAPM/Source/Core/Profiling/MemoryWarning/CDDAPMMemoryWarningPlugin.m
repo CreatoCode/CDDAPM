@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CDDAPMLogger.h"
 #import "CDDAPMMemoryWarningPlugin.h"
 #import "CDDAPMMemoryWarningModel.h"
 
@@ -49,7 +50,7 @@ CDDConstString CDDAPMMemoryWarningPluginTag = @"MemoryWarn";
 
 
 - (void)handleMemoryWarning:(NSNotification *)notification {
-    NSLog(@"Memory warning received with notification: %@", notification);
+    CDDAPMLogDebug(@"Memory warning received with notification: %@", notification);
     if ([self.reportDelegate respondsToSelector:@selector(reportIssue:)]){
         [self.reportDelegate reportIssue:[[CDDAPMMemoryWarningModel alloc] init]];
     }

@@ -6,11 +6,13 @@
 //
 
 #import "CDDAPMZobimeTest.h"
+#import "CDDAPMLogger.h"
+
 
 @implementation CDDAPMZobimeTest
 - (void)go
 {
-    NSLog(@"go:%@", self);
+    CDDAPMLogDebug(@"go:%@", self);
 }
 + (void)run
 {

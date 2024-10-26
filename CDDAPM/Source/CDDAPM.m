@@ -14,14 +14,14 @@
 #import "CDDAPMWhiteScreenPlugin.h"
 #import "CDDAPMPageTracker.h"
 #import "CDDAPMNetworkRequestPlugin.h"
-static CFAbsoluteTime __t2;
-
-void static __attribute__((constructor)) before_main(void) {
-    if (__t2 == 0) {
-        __t2 = CFAbsoluteTimeGetCurrent() + kCFAbsoluteTimeIntervalSince1970;
-    }
-    NSLog(@"----------App启动---------Main开始时间: %f", __t2);
-}
+//static CFAbsoluteTime __t2;
+//
+//void static __attribute__((constructor)) before_main(void) {
+//    if (__t2 == 0) {
+//        __t2 = CFAbsoluteTimeGetCurrent() + kCFAbsoluteTimeIntervalSince1970;
+//    }
+//    CDDAPMLogDebug(@"----------App启动---------Main开始时间: %f", __t2);
+//}
 
 @interface CDDAPM()<CDDAPMPluginReportProtocol>
 @property(strong) NSMutableSet<id<CDDAPMPluginProtocol>>*plugins;
@@ -79,20 +79,20 @@ void static __attribute__((constructor)) before_main(void) {
 
 - (void)reportIssue:(id<CDDAPMPIssueModelProtocol>_Nullable)issue
 {
-    NSLog(@"[CDDAPM report] pages:%@", [[CDDAPMPageTracker sharedInstance] recentPages]);
-    NSLog(@"[CDDAPM report] issue:%@", issue);
+    CDDAPMLogDebug(@"[CDDAPM report] pages:%@", [[CDDAPMPageTracker sharedInstance] recentPages]);
+    CDDAPMLogDebug(@"[CDDAPM report] issue:%@", issue);
 }
 
 - (void)reportWithDict:(NSDictionary*_Nonnull)dict
 {
-    NSLog(@"[CDDAPM report] pages:%@", [[CDDAPMPageTracker sharedInstance] recentPages]);
-    NSLog(@"[CDDAPM report] dict:%@", dict);
+    CDDAPMLogDebug(@"[CDDAPM report] pages:%@", [[CDDAPMPageTracker sharedInstance] recentPages]);
+    CDDAPMLogDebug(@"[CDDAPM report] dict:%@", dict);
 }
 
 - (void)appDidLaunch
 {
     double time = CFAbsoluteTimeGetCurrent() + kCFAbsoluteTimeIntervalSince1970;
-    NSLog(@"----------App启动---------FinishLaunch开始时间: %f",time);
+    CDDAPMLogDebug(@"----------App启动---------FinishLaunch开始时间: %f",time);
 }
 
 + (id<CDDAPMPluginProtocol>)getPluginInstanceWithTag:(NSString*)tag

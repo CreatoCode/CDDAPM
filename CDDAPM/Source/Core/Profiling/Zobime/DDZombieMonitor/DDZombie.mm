@@ -8,6 +8,7 @@
 #if __has_feature(objc_arc)
 #error This file must be compiled without ARC. Use -fno-objc-arc flag.
 #endif
+#import "CDDAPMLogger.h"
 
 #import "DDZombie.h"
 #import "DDZombieMonitor.h"
@@ -53,7 +54,7 @@
 
 - (void)doNothing
 {
-    NSLog(@"我只是保护一下crash，什么也不干");
+    CDDAPMLogDebug(@"我只是保护一下crash，什么也不干");
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation

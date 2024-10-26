@@ -6,6 +6,7 @@
 //
 
 #import <sys/sysctl.h>
+#import "CDDAPMLogger.h"
 #import "CDDAPMAppLaunchTimePlugin.h"
 #import "CDDAPMAppLaunchTimeModel.h"
 
@@ -34,7 +35,7 @@ static CFAbsoluteTime s_firstFrameRenderTime;
             NSTimeInterval tmp = procInfo.kp_proc.p_un.__p_starttime.tv_sec;
             NSDate *date = [NSDate dateWithTimeIntervalSince1970:tmp];
             // 输出本地时间
-            NSLog(@"process start time: %@", date);
+            CDDAPMLogDebug(@"process start time: %@", date);
             s_processStartTime = tmp ;
             //* 1000.0 + procInfo.kp_proc.p_un.__p_starttime.tv_usec / 1000.0;
         }
@@ -51,7 +52,7 @@ static CFAbsoluteTime s_firstFrameRenderTime;
         CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, activities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
             if (activity == kCFRunLoopBeforeTimers) {
                 s_firstFrameRenderTime = CFAbsoluteTimeGetCurrent();
-                NSLog(@"----------App启动---------BeforeTimers时间: %@",@(s_firstFrameRenderTime));
+                CDDAPMLogDebug(@"----------App启动---------BeforeTimers时间: %@",@(s_firstFrameRenderTime));
                 CFRunLoopRemoveObserver(mainRunloop, observer, kCFRunLoopCommonModes);
                 [self report];
             }
@@ -61,7 +62,7 @@ static CFAbsoluteTime s_firstFrameRenderTime;
         // block
         CFRunLoopPerformBlock(mainRunloop,NSDefaultRunLoopMode,^(){
             s_firstFrameRenderTime = CFAbsoluteTimeGetCurrent();
-            NSLog(@"----------App启动---------PerformBlock时间: %@",@(s_firstFrameRenderTime));
+            CDDAPMLogDebug(@"----------App启动---------PerformBlock时间: %@",@(s_firstFrameRenderTime));
             [self report];
         });
     }
@@ -76,7 +77,7 @@ static CFAbsoluteTime s_firstFrameRenderTime;
         model.processStartTime = s_processStartTime;
         model.firstFrameRenderTime = s_firstFrameRenderTime;
         NSTimeInterval diff = s_firstFrameRenderTime - [[NSDate dateWithTimeIntervalSince1970:s_processStartTime] timeIntervalSinceReferenceDate];
-        NSLog(@"diff:%@", @(diff));
+        CDDAPMLogDebug(@"diff:%@", @(diff));
         [self.reportDelegate reportIssue:model];
     }
 }
