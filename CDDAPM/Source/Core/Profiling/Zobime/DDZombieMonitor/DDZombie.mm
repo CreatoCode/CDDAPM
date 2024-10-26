@@ -54,7 +54,7 @@
 
 - (void)doNothing
 {
-    CDDAPMLogDebug(@"我只是保护一下crash，什么也不干");
+    CDDAPMLogDebug(@"Crash Protection，do nothing");
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation

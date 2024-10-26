@@ -1,3 +1,5 @@
+[中文](README.zh.md)
+
 #### CDDAPM
 This repository contains an iOS application that monitors various performance metrics to ensure a smooth user experience. 
 
@@ -40,6 +42,8 @@ int main(int argc, char * argv[]) {
 ### Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+Thank you to AlexTing0 for open-sourcing the zombie check DDZombieMonitor。
 
 ### License
 

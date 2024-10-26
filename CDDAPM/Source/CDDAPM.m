@@ -14,14 +14,6 @@
 #import "CDDAPMWhiteScreenPlugin.h"
 #import "CDDAPMPageTracker.h"
 #import "CDDAPMNetworkRequestPlugin.h"
-//static CFAbsoluteTime __t2;
-//
-//void static __attribute__((constructor)) before_main(void) {
-//    if (__t2 == 0) {
-//        __t2 = CFAbsoluteTimeGetCurrent() + kCFAbsoluteTimeIntervalSince1970;
-//    }
-//    CDDAPMLogDebug(@"----------App启动---------Main开始时间: %f", __t2);
-//}
 
 @interface CDDAPM()<CDDAPMPluginReportProtocol>
 @property(strong) NSMutableSet<id<CDDAPMPluginProtocol>>*plugins;
@@ -92,7 +84,7 @@
 - (void)appDidLaunch
 {
     double time = CFAbsoluteTimeGetCurrent() + kCFAbsoluteTimeIntervalSince1970;
-    CDDAPMLogDebug(@"----------App启动---------FinishLaunch开始时间: %f",time);
+    CDDAPMLogDebug(@"----------FinishLaunch---------: %f",time);
 }
 
 + (id<CDDAPMPluginProtocol>)getPluginInstanceWithTag:(NSString*)tag

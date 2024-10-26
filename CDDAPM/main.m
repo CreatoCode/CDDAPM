@@ -10,7 +10,6 @@
 #import "CDDAPM.h"
 
 int main(int argc, char * argv[]) {
-    CDDAPMLogDebug(@"----------App启动---------Main时间: %f", CFAbsoluteTimeGetCurrent() + kCFAbsoluteTimeIntervalSince1970);
     [[CDDAPM sharedInstance] appDidLaunch];
     [[CDDAPM sharedInstance] startPlugins:CDDAPMProfilingAll];
     NSString * appDelegateClassName;

@@ -49,7 +49,7 @@
         NSString *url = webView.URL.absoluteString;
         [webView takeSnapshotWithConfiguration:shotConfiguration completionHandler:^(UIImage * _Nullable snapshotImage, NSError * _Nullable error) {
             if (error) {
-                CDDAPMLogDebug(@"截图失败: %@", error);
+                CDDAPMLogDebug(@"take snapshot failed: %@", error);
             } else {
                 [CDDAPMImageDetection haveWhiteScreen:snapshotImage completion:^(BOOL isWhiteScreen, NSError* error) {
                     if (!error && isWhiteScreen) {

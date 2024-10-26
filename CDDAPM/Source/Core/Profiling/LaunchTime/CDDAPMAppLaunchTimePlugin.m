@@ -52,7 +52,7 @@ static CFAbsoluteTime s_firstFrameRenderTime;
         CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, activities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
             if (activity == kCFRunLoopBeforeTimers) {
                 s_firstFrameRenderTime = CFAbsoluteTimeGetCurrent();
-                CDDAPMLogDebug(@"----------App启动---------BeforeTimers时间: %@",@(s_firstFrameRenderTime));
+                CDDAPMLogDebug(@"----------BeforeTimers---------: %@",@(s_firstFrameRenderTime));
                 CFRunLoopRemoveObserver(mainRunloop, observer, kCFRunLoopCommonModes);
                 [self report];
             }
@@ -62,7 +62,7 @@ static CFAbsoluteTime s_firstFrameRenderTime;
         // block
         CFRunLoopPerformBlock(mainRunloop,NSDefaultRunLoopMode,^(){
             s_firstFrameRenderTime = CFAbsoluteTimeGetCurrent();
-            CDDAPMLogDebug(@"----------App启动---------PerformBlock时间: %@",@(s_firstFrameRenderTime));
+            CDDAPMLogDebug(@"----------PerformBlock---------: %@",@(s_firstFrameRenderTime));
             [self report];
         });
     }

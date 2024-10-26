@@ -39,12 +39,10 @@ static dispatch_queue_t getQueue(void)
                 }
                 NSArray *results = [request results];
                 
-                // 如果没有检测到文本矩形，可能是白屏
                 if (results.count == 0) {
-                    CDDAPMLogDebug(@"可能检测到白屏");
-                    // 在这里添加白屏处理逻辑
+                    CDDAPMLogDebug(@"Possible white screen detected");
                 } else {
-                    CDDAPMLogDebug(@"页面正常，检测到 %lu 个文本区域", (unsigned long)results.count);
+                    CDDAPMLogDebug(@"Page is normal, detected %lu text areas.", (unsigned long)results.count);
                 }
                 if (completion) {
                     completion(results.count == 0, nil);
@@ -59,7 +57,7 @@ static dispatch_queue_t getQueue(void)
             [handler performRequests:@[textRequest] error:&requestError];
             
             if (requestError) {
-                CDDAPMLogDebug(@"执行VNDetectTextRectanglesRequest时发生错误: %@", requestError);
+                CDDAPMLogDebug(@"VNDetectTextRectanglesRequest failed: %@", requestError);
             }
         }
     });
