@@ -9,7 +9,7 @@ This repository contains an iOS application that monitors various performance me
 3. **White Screens**
 4. **Zombie Objects (i.e., Crashes)**
 5. **Frame Rate**
-6. **Lag**
+6. **Lag(freeze)**
 7. **Launch Duration**
 
 ### Installation
